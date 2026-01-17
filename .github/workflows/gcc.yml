@@ -1,0 +1,17 @@
+name: GCC C CI 
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Compile C code
+      run: |
+        gcc mkdir.c -o mkdir 
+        # Optional: Run the compiled program
+        ./myprogram
