@@ -13,3 +13,8 @@ jobs:
     - name: Compile C code
       run: |
         gcc mkdir.c -o mkdir 
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+         name: mkdir
+         path: "/"
