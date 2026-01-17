@@ -13,5 +13,3 @@ jobs:
     - name: Compile C code
       run: |
         gcc mkdir.c -o mkdir 
-        # Optional: Run the compiled program
-        ./myprogram
